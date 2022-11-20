@@ -2,7 +2,6 @@ import React from "react";
 import T from "prop-types";
 import styled, { css } from "styled-components";
 import Icon from "commons/components/Icon";
-import Badge from "commons/components/Badge";
 
 const Box = styled.div`
   padding: 6px 12px;
@@ -35,15 +34,16 @@ const Box = styled.div`
     `}
 `;
 
-const StyledBadge = styled(Badge)`
-  margin-left: 6px;
-`;
-
-function Tab({ className, isActive = false, label, badge, icon, onClick }) {
+function Tab({ className, isActive = false, label, icon, onClick }) {
   return (
-    <Box className={className} isActive={isActive} onClick={onClick} hasIcon={!!icon} tabIndex="0">
+    <Box
+      className={className}
+      isActive={isActive}
+      onClick={onClick}
+      hasIcon={!!icon}
+      tabIndex="0"
+    >
       {label && !icon && label}
-      {badge && <StyledBadge label={badge} size="small" />}
       {icon && <Icon name={icon} size={16} />}
     </Box>
   );
@@ -53,7 +53,6 @@ Tab.propTypes = {
   className: T.string,
   isActive: T.bool,
   label: T.string.isRequired,
-  badge: T.oneOfType([T.string, T.number]),
   icon: T.string,
   onClick: T.func,
 };
