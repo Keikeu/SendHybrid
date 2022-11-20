@@ -11,7 +11,7 @@ import DocumentTable from "./DocumentTable";
 const Container = styled.div`
   max-width: 960px;
   margin: 0 auto;
-  padding: 40px 0 80px;
+  padding: 40px 40px 80px;
 `;
 
 const EmptyState = styled(Flexbox)`
@@ -36,13 +36,7 @@ function Documents() {
   const [documents, setDocuments] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  async function loadDocuments() {
-    const docs = await callApi("documents");
-    setDocuments(docs);
-    setLoading(false);
-  }
-
-  useEffect(() => {
+  function intervalLoad() {
     let iterations = 0;
 
     const interval = setInterval(() => {
@@ -54,11 +48,19 @@ function Documents() {
       if (iterations >= MAX_ITERATIONS) {
         clearInterval(interval);
       }
-    }, 3000);
-
-    loadDocuments();
+    }, 2000);
 
     return () => clearInterval(interval);
+  }
+
+  async function loadDocuments() {
+    const docs = await callApi("documents");
+    setDocuments(docs);
+    setLoading(false);
+  }
+
+  useEffect(() => {
+    loadDocuments();
   }, []);
 
   function onFilesSent() {
@@ -66,6 +68,7 @@ function Documents() {
       setLoading(true);
       loadDocuments();
       setOpen(false);
+      intervalLoad();
     }, 500);
   }
 

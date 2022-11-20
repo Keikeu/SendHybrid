@@ -41,7 +41,7 @@ const StepperButton = styled.button`
 `;
 
 const Value = styled.div`
-  width: 20px;
+  min-width: 32px;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -49,7 +49,15 @@ const Value = styled.div`
   color: var(--primary-100);
 `;
 
-function NumberStepper({ className, min = 1, max = 100, step = 1, value = 1, onChange, size = "medium" }) {
+function NumberStepper({
+  className,
+  min = 1,
+  max = 100,
+  step = 1,
+  value = 1,
+  onChange,
+  size = "medium",
+}) {
   function stepUp() {
     if (value + step > max) return;
     onChange(value + step);
@@ -62,7 +70,14 @@ function NumberStepper({ className, min = 1, max = 100, step = 1, value = 1, onC
 
   return (
     <Box className={className}>
-      <HiddenInput type="number" min={min} max={max} step={step} value={value} onChange={onChange} />
+      <HiddenInput
+        type="number"
+        min={min}
+        max={max}
+        step={step}
+        value={value}
+        onChange={onChange}
+      />
       <VisibleInput size={size}>
         <StepperButton type="button" onClick={stepDown}>
           <Icon name="remove" size={size === "medium" ? 20 : 16} />

@@ -27,7 +27,7 @@ const Circle = styled.div`
         background-color: var(--neutral-200);
         border-radius: 50%;
       }
-    `}
+    `};
 `;
 
 function RadioButton({ className, label, isActive }) {

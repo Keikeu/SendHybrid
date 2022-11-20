@@ -9,6 +9,7 @@ const Box = styled(Flexbox)`
   padding: 10px 12px;
   border-radius: var(--border-radius-2);
   cursor: pointer;
+  text-transform: capitalize;
 
   &:hover {
     background-color: var(--neutral-190);

@@ -11,7 +11,7 @@ const Container = styled.div`
   position: relative;
   max-width: 768px;
   margin: 0 auto;
-  padding: 40px 0 80px;
+  padding: 40px 40px 80px;
 `;
 
 const BackButton = styled(Button)`
