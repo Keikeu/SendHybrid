@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/SendHybrid/static/css/main.cb1de72d.chunk.css",
-    "main.js": "/SendHybrid/static/js/main.f5f3b567.chunk.js",
-    "main.js.map": "/SendHybrid/static/js/main.f5f3b567.chunk.js.map",
+    "main.css": "/SendHybrid/static/css/main.5eadefea.chunk.css",
+    "main.js": "/SendHybrid/static/js/main.ef16ac3a.chunk.js",
+    "main.js.map": "/SendHybrid/static/js/main.ef16ac3a.chunk.js.map",
     "runtime-main.js": "/SendHybrid/static/js/runtime-main.8cab07b5.js",
     "runtime-main.js.map": "/SendHybrid/static/js/runtime-main.8cab07b5.js.map",
-    "static/js/2.7a45840a.chunk.js": "/SendHybrid/static/js/2.7a45840a.chunk.js",
-    "static/js/2.7a45840a.chunk.js.map": "/SendHybrid/static/js/2.7a45840a.chunk.js.map",
+    "static/js/2.fd6b5b4d.chunk.js": "/SendHybrid/static/js/2.fd6b5b4d.chunk.js",
+    "static/js/2.fd6b5b4d.chunk.js.map": "/SendHybrid/static/js/2.fd6b5b4d.chunk.js.map",
     "index.html": "/SendHybrid/index.html",
-    "precache-manifest.9fd7e7ea1bc6c79b44ee21c3319f5887.js": "/SendHybrid/precache-manifest.9fd7e7ea1bc6c79b44ee21c3319f5887.js",
+    "precache-manifest.656867fb494632cdc4f9b1c809ae90ac.js": "/SendHybrid/precache-manifest.656867fb494632cdc4f9b1c809ae90ac.js",
     "service-worker.js": "/SendHybrid/service-worker.js",
-    "static/css/main.cb1de72d.chunk.css.map": "/SendHybrid/static/css/main.cb1de72d.chunk.css.map",
-    "static/js/2.7a45840a.chunk.js.LICENSE.txt": "/SendHybrid/static/js/2.7a45840a.chunk.js.LICENSE.txt",
-    "static/js/main.f5f3b567.chunk.js.LICENSE.txt": "/SendHybrid/static/js/main.f5f3b567.chunk.js.LICENSE.txt"
+    "static/css/main.5eadefea.chunk.css.map": "/SendHybrid/static/css/main.5eadefea.chunk.css.map",
+    "static/js/2.fd6b5b4d.chunk.js.LICENSE.txt": "/SendHybrid/static/js/2.fd6b5b4d.chunk.js.LICENSE.txt",
+    "static/js/main.ef16ac3a.chunk.js.LICENSE.txt": "/SendHybrid/static/js/main.ef16ac3a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8cab07b5.js",
-    "static/js/2.7a45840a.chunk.js",
-    "static/css/main.cb1de72d.chunk.css",
-    "static/js/main.f5f3b567.chunk.js"
+    "static/js/2.fd6b5b4d.chunk.js",
+    "static/css/main.5eadefea.chunk.css",
+    "static/js/main.ef16ac3a.chunk.js"
   ]
 }
