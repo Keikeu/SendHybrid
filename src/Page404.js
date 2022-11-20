@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Button from "commons/components/Button";
 import Typography from "commons/components/Typography";
+import { Navigate } from "react-router-dom";
 
 const Canvas = styled.div`
   display: flex;
@@ -27,14 +28,19 @@ const Subtitle = styled(Typography)`
 
 function Page404() {
   return (
-    <Canvas>
-      <Title variant="h1">Looks like you're lost</Title>
-      <Subtitle variant="body1">
-        The page you are looking for does not exist.
-      </Subtitle>
-      <Button link="/">Go to homepage</Button>
-    </Canvas>
+    <>
+      <Navigate replace to="/" />
+    </>
   );
+  // return (
+  //   <Canvas>
+  //     <Title variant="h1">Looks like you're lost</Title>
+  //     <Subtitle variant="body1">
+  //       The page you are looking for does not exist.
+  //     </Subtitle>
+  //     <Button link="/">Go to homepage</Button>
+  //   </Canvas>
+  // );
 }
 
 export default Page404;

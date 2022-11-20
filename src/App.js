@@ -20,7 +20,7 @@ function App() {
   return (
     <Box>
       <Navigation>
-        <Button variant="tertiary" size="small" icon="home" link="/documents" />
+        <Button variant="tertiary" size="small" icon="home" link="/" />
         <Button variant="tertiary" size="small" icon="settings" link="/login" />
       </Navigation>
       <Outlet />

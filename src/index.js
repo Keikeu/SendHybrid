@@ -2,7 +2,6 @@ import React from "react";
 import { render } from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
-import Home from "./Home/Home";
 import Documents from "./Documents/Documents";
 import Report from "./Report/Report";
 import Settings from "./Settings/Settings";
@@ -16,8 +15,7 @@ render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />}>
-          <Route index element={<Home />} />
-          <Route path="documents" element={<Documents />} />
+          <Route index element={<Documents />} />
           <Route path="report/:id" element={<Report />} />
           <Route path="settings" element={<Settings />} />
           <Route path="login" element={<Login />} />

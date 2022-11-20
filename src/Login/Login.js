@@ -7,12 +7,7 @@ import Typography from "commons/components/Typography";
 import { useNavigate } from "react-router-dom";
 
 const Box = styled.div`
-  background: linear-gradient(
-      180deg,
-      var(--primary-190) 0%,
-      rgba(255, 255, 255, 0) 100%
-    ),
-    #ffffff;
+  background: var(--primary-190);
   height: calc(100% - 40px);
 `;
 

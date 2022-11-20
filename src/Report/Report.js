@@ -77,7 +77,7 @@ function Report() {
         <Typography variant="h3" margin="40px 0 24px">
           Report not found
         </Typography>
-        <Button variant="tertiary" icon="arrow_back" link="/documents">
+        <Button variant="tertiary" icon="arrow_back" link="/">
           Go back
         </Button>
       </Flexbox>
@@ -86,7 +86,7 @@ function Report() {
 
   return (
     <Container>
-      <BackButton variant="tertiary" icon="arrow_back" link="/documents">
+      <BackButton variant="tertiary" icon="arrow_back" link="/">
         Back
       </BackButton>
       <Typography variant="h1">Validation report (file ID: {id})</Typography>
