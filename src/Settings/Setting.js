@@ -60,7 +60,9 @@ function Setting({
               </>
             ) : (
               <>
-                <StringValue variant="body1">{value}</StringValue>
+                <StringValue variant="body1">
+                  {value.replaceAll("_", " ")}
+                </StringValue>
                 <Button
                   variant="secondary"
                   size="small"
