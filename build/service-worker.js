@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/SendHybrid/precache-manifest.9fd7e7ea1bc6c79b44ee21c3319f5887.js"
+  "/SendHybrid/precache-manifest.e138573039466f49b4329646fbdd5bd4.js"
 );
 
 self.addEventListener('message', (event) => {
