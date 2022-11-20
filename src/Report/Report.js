@@ -10,7 +10,8 @@ import styled from "styled-components";
 const Container = styled.div`
   position: relative;
   max-width: 768px;
-  margin: 40px auto;
+  margin: 0 auto;
+  padding: 40px 0 80px;
 `;
 
 const BackButton = styled(Button)`

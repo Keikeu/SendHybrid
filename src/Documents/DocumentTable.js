@@ -129,6 +129,7 @@ function DocumentTable({ documents }) {
       rows={documents}
       columns={columns}
       pageSize={25}
+      rowsPerPageOptions={[25]}
       autoHeight
     />
   );

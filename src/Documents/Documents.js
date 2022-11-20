@@ -1,7 +1,7 @@
 import Button from "commons/components/Button";
 import Typography from "commons/components/Typography";
 import React, { useEffect, useState } from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import Flexbox from "commons/components/Flexbox";
 import FileUpload from "./FileUpload";
 import callApi from "commons/util/callApi";
@@ -10,7 +10,8 @@ import DocumentTable from "./DocumentTable";
 
 const Container = styled.div`
   max-width: 960px;
-  margin: 40px auto;
+  margin: 0 auto;
+  padding: 40px 0 80px;
 `;
 
 const EmptyState = styled(Flexbox)`

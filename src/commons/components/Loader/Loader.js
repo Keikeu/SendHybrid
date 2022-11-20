@@ -1,6 +1,6 @@
 import React from "react";
 import T from "prop-types";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import Flexbox from "../Flexbox";
 
 const Container = styled(Flexbox)`

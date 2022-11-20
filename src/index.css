@@ -73,6 +73,12 @@
   --z-index-inf: 2147483647;
 }
 
+html,
+body,
+#root {
+  height: 100%;
+}
+
 * {
   box-sizing: border-box;
 }

@@ -10,7 +10,8 @@ import Loader from "commons/components/Loader";
 const Box = styled.div`
   position: relative;
   width: 508px;
-  margin: 40px auto;
+  margin: 0 auto;
+  padding: 40px 0 80px;
 `;
 
 const AbsoluteTabs = styled(Tabs)`
