@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/SendHybrid/static/css/main.cb1de72d.chunk.css",
+    "main.js": "/SendHybrid/static/js/main.f5f3b567.chunk.js",
+    "main.js.map": "/SendHybrid/static/js/main.f5f3b567.chunk.js.map",
+    "runtime-main.js": "/SendHybrid/static/js/runtime-main.8cab07b5.js",
+    "runtime-main.js.map": "/SendHybrid/static/js/runtime-main.8cab07b5.js.map",
+    "static/js/2.7a45840a.chunk.js": "/SendHybrid/static/js/2.7a45840a.chunk.js",
+    "static/js/2.7a45840a.chunk.js.map": "/SendHybrid/static/js/2.7a45840a.chunk.js.map",
+    "index.html": "/SendHybrid/index.html",
+    "precache-manifest.9fd7e7ea1bc6c79b44ee21c3319f5887.js": "/SendHybrid/precache-manifest.9fd7e7ea1bc6c79b44ee21c3319f5887.js",
+    "service-worker.js": "/SendHybrid/service-worker.js",
+    "static/css/main.cb1de72d.chunk.css.map": "/SendHybrid/static/css/main.cb1de72d.chunk.css.map",
+    "static/js/2.7a45840a.chunk.js.LICENSE.txt": "/SendHybrid/static/js/2.7a45840a.chunk.js.LICENSE.txt",
+    "static/js/main.f5f3b567.chunk.js.LICENSE.txt": "/SendHybrid/static/js/main.f5f3b567.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8cab07b5.js",
+    "static/js/2.7a45840a.chunk.js",
+    "static/css/main.cb1de72d.chunk.css",
+    "static/js/main.f5f3b567.chunk.js"
+  ]
+}
