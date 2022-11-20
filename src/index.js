@@ -17,7 +17,6 @@ render(
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
-          <Route path="SendHybrid" element={<Documents />} />
           <Route path="documents" element={<Documents />} />
           <Route path="report/:id" element={<Report />} />
           <Route path="settings" element={<Settings />} />

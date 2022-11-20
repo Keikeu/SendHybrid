@@ -1,7 +1,7 @@
 {
   "name": "cook-your-goose",
   "version": "0.1.0",
-  "homepage": "https://keikeu.github.io/SendHybrid",
+  "homepage": "https://keikeu.github.io/documents",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
