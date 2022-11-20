@@ -19,8 +19,8 @@ const buttonStyle = css`
     pointer-events: none;
   }
 
-  ${({ fullWidth }) =>
-    fullWidth &&
+  ${({ $fullWidth }) =>
+    $fullWidth &&
     css`
       width: 100%;
     `}
@@ -150,18 +150,21 @@ function Button({
   fullWidth,
   ariaLabel,
   disabled,
+  target,
   as,
+  href,
 }) {
   const commonProps = {
     className,
     size,
     variant,
-    fullWidth,
+    $fullWidth: fullWidth,
     disabled,
-    hasLabel: !!children,
+    $hasLabel: !!children,
     as,
+    target,
   };
-  const iconSize = commonProps.hasLabel ? 16 : 20;
+  const iconSize = commonProps.$hasLabel ? 16 : 20;
 
   const content = (
     <>
@@ -177,7 +180,12 @@ function Button({
           {content}
         </LinkBox>
       ) : (
-        <Box onClick={onClick} {...commonProps} aria-label={ariaLabel}>
+        <Box
+          href={href}
+          onClick={onClick}
+          {...commonProps}
+          aria-label={ariaLabel}
+        >
           {content}
         </Box>
       )}
@@ -196,6 +204,8 @@ Button.propTypes = {
   fullWidth: T.bool,
   ariaLabel: T.string,
   disabled: T.bool,
+  target: T.string,
+  href: T.string,
   as: T.string,
 };
 

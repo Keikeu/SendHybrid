@@ -10,17 +10,15 @@ import {
 import Button from "commons/components/Button";
 import Flexbox from "commons/components/Flexbox";
 import callApi from "commons/util/callApi";
+import Typography from "commons/components/Typography";
 
 const HiddenFileInput = styled.input`
   position: absolute;
   visibility: hidden;
 `;
 
-const DragAndDropArea = styled(Flexbox)`
-  /* border: 1px solid var(--primary-140); */
-  /* background-color: var(--primary-190); */
-  /* height: 140px; */
-  height: 40px;
+const BrowseWrap = styled(Flexbox)`
+  height: 140px;
   width: 400px;
   padding: 40px;
 `;
@@ -82,11 +80,11 @@ function FileUpload({ onClose, open, onFilesSent }) {
       <DialogTitle>Upload documents</DialogTitle>
       <DialogContent>
         <label htmlFor="fileUpload">
-          <DragAndDropArea justifyContent="center" alignItems="center">
-            <Button as="a" variant="secondary" size="small">
+          <BrowseWrap justifyContent="center" alignItems="center">
+            <Button as="a" variant="tertiary">
               Browse
             </Button>
-          </DragAndDropArea>
+          </BrowseWrap>
         </label>
         <HiddenFileInput
           type="file"
@@ -94,6 +92,9 @@ function FileUpload({ onClose, open, onFilesSent }) {
           multiple
           onChange={handleFileEvent}
         />
+        {!!uploadedFiles.length && (
+          <Typography variant="h3">Documents to upload:</Typography>
+        )}
         <FileList>
           {uploadedFiles.map((file) => (
             <File key={file.name}>

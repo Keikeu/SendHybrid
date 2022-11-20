@@ -5,6 +5,7 @@ import Typography from "commons/components/Typography";
 import callApi from "commons/util/callApi";
 import Tabs from "commons/components/Tabs";
 import Setting from "./Setting";
+import Loader from "commons/components/Loader";
 
 const Box = styled.div`
   position: relative;
@@ -14,7 +15,7 @@ const Box = styled.div`
 
 const AbsoluteTabs = styled(Tabs)`
   position: absolute;
-  left: -200px;
+  left: -154px;
 `;
 
 const defaultTabs = [
@@ -303,7 +304,7 @@ function Settings() {
   }, []);
 
   if (loading) {
-    return <>loading...</>;
+    return <Loader />;
   }
 
   return (
